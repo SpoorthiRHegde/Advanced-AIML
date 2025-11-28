@@ -5,6 +5,7 @@ from sklearn.neighbors import KNeighborsClassifier
 # Load image dataset (handwritten digits)
 digits = load_digits()
 X, y = digits.data, digits.target  # Flattened image pixels and labels
+print(X)
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
